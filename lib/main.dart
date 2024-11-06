@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loggin_pages/splash.dart';
+import 'package:todo_application/Screen/Home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,12 +8,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return const MaterialApp(
+      title: 'Todo App',
       debugShowCheckedModeBanner: false,
-      home: Screen(),
+      home:Homepage(),
     );
   }
 }
